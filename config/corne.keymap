@@ -12,21 +12,25 @@
         compatible = "zmk,combos";
 
         to-gaming {
+            timeout-ms = <30>;
             bindings = <&to 5>;
             key-positions = <24 25>;
         };
 
         ae {
+            timeout-ms = <30>;
             bindings = <&kp RA(K)>;
             key-positions = <16 15>;
         };
 
         oe {
+            timeout-ms = <30>;
             bindings = <&kp RA(L)>;
             key-positions = <16 14>;
         };
 
         aa {
+            timeout-ms = <30>;
             bindings = <&kp RA(W)>;
             key-positions = <16 13>;
         };
