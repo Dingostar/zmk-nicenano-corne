@@ -104,9 +104,9 @@
 
         gaming {
             bindings = <
-&kp N1  &kp TAB    &kp Q  &kp W         &kp E       &kp R        &trans  &trans  &trans  &trans  &trans  &trans
-&kp N2  &kp ESC    &kp A  &kp S         &kp D       &kp F        &trans  &trans  &trans  &trans  &trans  &trans
-&kp N3  &kp LCTRL  &kp Z  &kp X         &kp C       &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp N1  &kp Q  &kp W         &kp E       &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp N2  &kp A  &kp S         &kp D       &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp N3  &kp Z  &kp X         &kp C       &kp V        &trans  &trans  &trans  &trans  &trans  &trans
                           &kp LEFT_ALT  &kp LSHIFT  &kp SPACE    &to 0   &trans  &trans
             >;
         };
