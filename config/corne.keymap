@@ -8,6 +8,30 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        to-gaming {
+            bindings = <&to 5>;
+            key-positions = <24 25>;
+        };
+
+        ae {
+            bindings = <&kp RA(K)>;
+            key-positions = <16 15>;
+        };
+
+        oe {
+            bindings = <&kp RA(L)>;
+            key-positions = <16 14>;
+        };
+
+        aa {
+            bindings = <&kp RA(W)>;
+            key-positions = <16 13>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -76,10 +100,10 @@
 
         gaming {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E         &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp A  &kp S  &kp D         &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp V      &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp LEFT_ALT  &kp LSHFT  &kp SPACE    &sl 0   &trans  &trans
+&kp N1  &kp TAB    &kp Q  &kp W         &kp E       &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp N2  &kp ESC    &kp A  &kp S         &kp D       &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&kp N3  &kp LCTRL  &kp Z  &kp X         &kp C       &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp LEFT_ALT  &kp LSHIFT  &kp SPACE    &to 0   &trans  &trans
             >;
         };
     };
