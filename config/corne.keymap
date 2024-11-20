@@ -92,7 +92,7 @@
         shortcut {
             bindings = <
 &trans  &trans  &trans  &trans     &kp LC(F)   &kp LC(LS(F))    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp K_CUT  &kp K_COPY  &kp K_PASTE      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LC(X)  &kp LC(C)   &kp LC(V)        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp LC(S)  &kp K_UNDO  &kp K_REDO       &trans  &trans  &trans  &trans  &trans  &trans
                         &trans     &trans      &trans           &trans  &trans  &trans
             >;
