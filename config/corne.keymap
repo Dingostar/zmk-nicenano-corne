@@ -19,7 +19,7 @@
 
         ae {
             timeout-ms = <30>;
-            bindings = <&ae_macro>;
+            bindings = <&kp RA(K)>;
             key-positions = <16 15>;
         };
 
@@ -33,6 +33,11 @@
             timeout-ms = <30>;
             bindings = <&kp RA(W)>;
             key-positions = <16 13>;
+        };
+
+        ctrlspace {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <28 27>;
         };
     };
 
@@ -56,9 +61,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp QUESTION       &kp PERIOD         &kp COMMA  &kp L     &kp P                     &kp Y      &kp F          &kp G        &kp C         &kp R  &kp Q     &kp EQUAL
-&mt LSHIFT ESCAPE  &lt 4 A            &kp O      &kp E     &lt 3 I                   &kp U      &kp D          &lt 2 H      &kp T         &kp N  &kp S     &kp UNDERSCORE
-&mt LCTRL SLASH    &kp DOUBLE_QUOTES  &kp SQT    &kp J     &kp K                     &kp X      &kp B          &kp M        &kp W         &kp V  &kp FSLH  &kp MINUS
+&kp QUESTION       &kp PERIOD         &kp COMMA  &kp L     &kp P                     &kp Y      &kp F          &kp G        &kp C         &kp R  &kp Q  &kp EQUAL
+&mt LSHIFT ESCAPE  &lt 4 A            &kp O      &kp E     &lt 3 I                   &kp U      &kp D          &lt 2 H      &kp T         &kp N  &kp S  &kp UNDERSCORE
+&mt LCTRL SLASH    &kp DOUBLE_QUOTES  &kp APOS   &kp J     &kp K                     &kp X      &kp B          &kp M        &kp W         &kp V  &kp Z  &kp MINUS
                                                  &kp LGUI  &mt LEFT_SHIFT BACKSPACE  &kp TAB    &mt LCTRL RET  &lt 1 SPACE  &kp LEFT_ALT
             >;
         };
@@ -104,10 +109,10 @@
 
         shortcut {
             bindings = <
-&trans  &trans  &trans  &trans     &kp LC(F)   &kp LC(LS(F))    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LC(X)  &kp LC(C)   &kp LC(V)        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LC(S)  &kp K_UNDO  &kp K_REDO       &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans     &trans      &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &kp LC(F)  &kp LC(LS(F))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LC(S)  &kp LC(Z)  &kp LC(Y)        &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans     &trans     &trans           &trans  &trans  &trans
             >;
         };
 
