@@ -19,19 +19,19 @@
 
         ae {
             timeout-ms = <30>;
-            bindings = <&ae_macro>;
+            bindings = <&kp U+00E6>; // æ
             key-positions = <16 15>;
         };
 
         oe {
             timeout-ms = <30>;
-            bindings = <&kp RA(L)>;
+            bindings = <&kp U+00F8>; // ø
             key-positions = <16 14>;
         };
 
         aa {
             timeout-ms = <30>;
-            bindings = <&kp RA(W)>;
+            bindings = <&kp U+00E5>; // å
             key-positions = <16 13>;
         };
     };
