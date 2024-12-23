@@ -19,7 +19,7 @@
 
         ae {
             timeout-ms = <30>;
-            bindings = <&kp RA(K)>;
+            bindings = <&kp RA(Z)>;
             key-positions = <16 15>;
         };
 
