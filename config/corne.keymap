@@ -15,7 +15,7 @@
         to-gaming {
             timeout-ms = <30>;
             bindings = <&to 5>;
-            key-positions = <24 25>;
+            key-positions = <36 37 38>;
         };
 
         ae {
