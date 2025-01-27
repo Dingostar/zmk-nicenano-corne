@@ -53,12 +53,12 @@
 
         BT2 {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <10 11>;
+            key-positions = <24 25>;
         };
 
         BT_clr {
             bindings = <&bt BT_CLR>;
-            key-positions = <22 23>;
+            key-positions = <0 2>;
         };
     };
 
