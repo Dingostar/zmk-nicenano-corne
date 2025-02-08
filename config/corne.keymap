@@ -63,7 +63,7 @@
 
         F12_key {
             bindings = <&kp F12>;
-            key-positions = <19 20>;
+            key-positions = <8 7>;
         };
 
         F5_key {
@@ -79,6 +79,11 @@
         F11_key {
             bindings = <&kp F11>;
             key-positions = <31 34>;
+        };
+
+        F9_key {
+            bindings = <&kp F9>;
+            key-positions = <7 9>;
         };
     };
 
