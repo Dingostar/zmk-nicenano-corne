@@ -22,10 +22,10 @@ include:
   - board: nice_nano_v2
     # required: https://github.com/M165437/nice-view-gem
     # shield: corne_left nice_view_adapter nice_view
-    shield: corne_left nice_view_adapter nice_view
+    shield: splitkb_aurora_corne_left
     # shield: corne_left # for OLED no nice_view
   - board: nice_nano_v2
     # required: https://github.com/M165437/nice-view-gem
     # shield: corne_right nice_view_adapter nice_view
-    shield: corne_right nice_view_adapter nice_view
+    shield: splitkb_aurora_corne_right
     # shield: corne_right # for OLED no nice_view
