@@ -112,7 +112,7 @@
 &kp dk_?       &kp PERIOD   &kp COMMA             &kp L     &kp P                     &kp Y                &kp F          &kp G        &kp C         &kp R  &kp Q  &kp RIGHT_PARENTHESIS
 &mt LSHIFT ESCAPE    &lt 4 A      &kp O                 &kp E     &lt 3 I                   &kp U                &kp D          &lt 2 H      &kp T         &kp N  &kp S  &kp QUESTION
 &mt LCTRL AMPERSAND  &kp AT_SIGN  &kp NON_US_BACKSLASH  &kp J     &kp K                     &kp X                &kp B          &kp M        &kp W         &kp V  &kp Z  &kp SLASH
-                                                        &kp LGUI  &mt LEFT_SHIFT BACKSPACE  &mt RIGHT_ALT TAB    &mt LCTRL RET  &lt 1 SPACE  &kp LEFT_ALT
+                                                        &kp LGUI  &mt LEFT_SHIFT BACKSPACE  &mt LGUI TAB    &mt LCTRL RET  &lt 1 SPACE  &kp LEFT_ALT
             >;
         };
 
