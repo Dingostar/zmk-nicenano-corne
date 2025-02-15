@@ -20,19 +20,19 @@
 
         ae {
             timeout-ms = <30>;
-            bindings = <&kp RA(Z)>;
+            bindings = <&kp SEMICOLON>;
             key-positions = <16 15>;
         };
 
         oe {
             timeout-ms = <30>;
-            bindings = <&kp RA(L)>;
+            bindings = <&kp APOS>;
             key-positions = <16 14>;
         };
 
         aa {
             timeout-ms = <30>;
-            bindings = <&kp RA(W)>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 13>;
         };
 
@@ -122,10 +122,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp COLON  &kp SEMICOLON  &kp LESS_THAN         &kp GREATER_THAN       &kp N5           &kp PLUS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp ASTERISK  &trans
-&trans  &trans     &kp AT_SIGN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND    &kp MINUS   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp HASH         &kp PERCENT   &trans
-&trans  &trans     &kp GRAVE      &trans                &kp TILDE              &kp TILDE        &kp DOLLAR  &kp BACKSLASH     &kp SLASH          &kp PIPE         &trans        &trans
-                                  &trans                &trans                 &trans           &trans      &trans            &trans
+&trans  &kp GT  &kp LT            &kp BACKSLASH  &kp PIPE               &none               &kp MINUS         &kp RA(NUMBER_8)   &kp RA(N9)  &kp EXCLAMATION  &kp PIPE2    &trans
+&trans  &trans  &kp RA(NUMBER_2)  &kp ASTRK      &kp RIGHT_PARENTHESIS  &kp LS(NUMBER_6)    &kp SLASH         &kp RA(N7)         &kp RA(N0)  &kp HASH         &kp PERCENT  &trans
+&trans  &trans  &kp EQUAL         &trans         &kp RA(RIGHT_BRACKET)  &none               &kp RA(NUMBER_4)  &kp RA(BACKSLASH)  &kp LS(N7)  &kp RA(EQUAL)    &trans       &trans
+                                  &trans         &trans                 &trans              &trans            &trans             &trans
             >;
         };
 
@@ -146,9 +146,9 @@
 
         numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PERIOD  &kp N7        &kp N8        &kp N9        &kp SLASH     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PIPE2      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp SLASH   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PERIOD  &kp N7        &kp N8        &kp N9        &kp LS(SLASH)  &trans
                         &trans  &trans  &trans    &trans      &trans        &trans
             >;
         };
