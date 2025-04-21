@@ -25,6 +25,17 @@
         to-gaming {
             timeout-ms = <30>;
             bindings = <&to 5>;
+            key-positions = <36 37 38 39 40 41>;
+        };
+
+        to-experimental {
+            timeout-ms = <30>;
+            bindings = <&to 1>;
+            key-positions = <39 40 41>;
+        };
+        to-default {
+            timeout-ms = <30>;
+            bindings = <&to 6>;
             key-positions = <36 37 38>;
         };
 
