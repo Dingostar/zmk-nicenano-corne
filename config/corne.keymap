@@ -9,6 +9,14 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define dk_question UNDERSCORE
+#define dk_quot AT_SIGN
+#define dk_apos BACKSLASH
+#define dk_equal RIGHT_PARENTHESIS
+#define dk_underscore QUESTION
+#define dk_dash SLASH
+#define dk_fslash LS(N7)
+#define dk_bslash RA(NON_US_BACKSLASH)
+#define dk_pipe RA(EQUAL)
 
 / {
     combos {
