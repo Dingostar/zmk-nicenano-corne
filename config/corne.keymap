@@ -194,10 +194,10 @@
 
         layer_6 {
             bindings = <
-&kp dk_question      &kp J        &kp G         &kp M           &kp P             &kp V           &kp dk_hash       &kp PERIOD   &kp dk_fslash &kp dk_quot &kp dk_apos  &kp dk_equal
-&mt LSHIFT ESCAPE    &lt 4 C      &kp S         &kp N           &lt 3 T           &kp K           &kp COMMA         &lt 2 A      &kp E         &kp I       &kp H        &kp dk_underscore
-&mt LCTRL dk_bslash  &kp X        &kp F         &kp L           &kp D             &kp W           &kp dk_dash       &kp U        &kp O         &kp Y       &kp B        &kp dk_dash
-                                                &kp BACKSPACE   &mt LEFT_SHIFT R  &mt LGUI TAB    &mt LCTRL RET     &lt 1 SPACE  &kp LEFT_ALT
+&kp dk_question                     &kp J       &kp G           &kp M               &kp P               &kp V               &kp HASH        &kp PERIOD    &kp LS(N7)    &kp dk_quot &kp dk_apos  &kp dk_equal
+&mt LSHIFT ESCAPE                   &lt 4 C     &kp S           &kp N               &lt 3 T             &kp K               &kp COMMA       &lt 2 A       &kp E         &kp I       &kp H        &kp dk_underscore
+&mt LCTRL RA(NON_US_BACKSLASH)      &kp X       &kp F           &kp L               &kp D               &kp W               &kp dk_dash     &kp U         &kp O         &kp Y       &kp B        &kp dk_dash
+                                                &kp BACKSPACE   &mt LEFT_SHIFT R    &mt LGUI TAB        &mt LCTRL RET       &lt 1 SPACE     &kp LEFT_ALT
             >;
         };
     };
