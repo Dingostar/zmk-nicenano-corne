@@ -200,5 +200,14 @@
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
+
+        layer_6 {
+            bindings = <
+&kp dk_question      &kp j        &kp g          &kp m          &kp p             &kp v           &kp dk_hash       &kp PERIOD   &kp dk_fslash &kp dk_quot &kp dk_apos  &kp dk_equal
+&mt LSHIFT ESCAPE    &lt 4 c      &kp s          &kp n          &lt 3 t           &kp k           &kp COMMA         &lt 2 a      &kp e         &kp i       &kp h        &kp dk_underscore
+&mt LCTRL dk_bslash  &kp x        &kp f          &kp L          &kp d             &kp w           &kp dk_dash       &kp u        &kp o         &kp y       &kp b        &kp dk_dash
+                                                 &kp BACKSPACE  &mt LEFT_SHIFT r  &mt LGUI TAB    &mt LCTRL RET     &lt 1 SPACE  &kp LEFT_ALT
+            >;
+        };
     };
 };
