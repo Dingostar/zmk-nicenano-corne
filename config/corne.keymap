@@ -194,9 +194,9 @@
 
         layer_6 {
             bindings = <
-&kp dk_question      &kp j        &kp G         &kp M           &kp p             &kp v           &kp dk_hash       &kp PERIOD   &kp dk_fslash &kp dk_quot &kp dk_apos  &kp dk_equal
-&mt LSHIFT ESCAPE    &lt 4 c      &kp S         &kp N           &lt 3 t           &kp k           &kp COMMA         &lt 2 a      &kp e         &kp i       &kp h        &kp dk_underscore
-&mt LCTRL dk_bslash  &kp x        &kp F         &kp L           &kp d             &kp w           &kp dk_dash       &kp u        &kp o         &kp y       &kp b        &kp dk_dash
+&kp dk_question      &kp J        &kp G         &kp M           &kp P             &kp V           &kp dk_hash       &kp PERIOD   &kp dk_fslash &kp dk_quot &kp dk_apos  &kp dk_equal
+&mt LSHIFT ESCAPE    &lt 4 C      &kp S         &kp N           &lt 3 T           &kp K           &kp COMMA         &lt 2 A      &kp E         &kp I       &kp H        &kp dk_underscore
+&mt LCTRL dk_bslash  &kp X        &kp F         &kp L           &kp D             &kp W           &kp dk_dash       &kp U        &kp O         &kp Y       &kp B        &kp dk_dash
                                                 &kp BACKSPACE   &mt LEFT_SHIFT r  &mt LGUI TAB    &mt LCTRL RET     &lt 1 SPACE  &kp LEFT_ALT
             >;
         };
