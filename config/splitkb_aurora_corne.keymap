@@ -9,6 +9,14 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define dk_question UNDERSCORE
+#define dk_quot AT_SIGN
+#define dk_apos BACKSLASH
+#define dk_equal RIGHT_PARENTHESIS
+#define dk_underscore QUESTION
+#define dk_dash SLASH
+#define dk_fslash LS(N7)
+#define dk_bslash RA(NON_US_BACKSLASH)
+#define dk_pipe RA(EQUAL)
 
 / {
     combos {
@@ -17,6 +25,17 @@
         to-gaming {
             timeout-ms = <30>;
             bindings = <&to 5>;
+            key-positions = <36 37 38 39 40 41>;
+        };
+
+        to-experimental {
+            timeout-ms = <30>;
+            bindings = <&to 1>;
+            key-positions = <39 40 41>;
+        };
+        to-default {
+            timeout-ms = <30>;
+            bindings = <&to 6>;
             key-positions = <36 37 38>;
         };
 
@@ -175,10 +194,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp dk_question      &kp j        &kp g          &kp m     &kp p                     &kp v           &kp dk_hash    &kp PERIOD   &kp dk_fslash &kp dk_quot &kp dk_apos  &kp dk_equal
+&mt LSHIFT ESCAPE    &lt 4 c      &kp s          &kp n     &lt 3 t                   &kp k           &kp COMMA          &lt 2 a      &kp e         &kp i       &kp h        &kp dk_underscore
+&mt LCTRL dk_bslash  &kp x        &kp f          &kp L     &kp d                     &kp w           &kp dk_dash          &kp u        &kp o         &kp y       &kp b        &kp dk_dash
+                                                 &kp BACKSPACE  &mt LEFT_SHIFT r  &mt LGUI TAB    &mt LCTRL RET  &lt 1 SPACE  &kp LEFT_ALT
             >;
         };
     };
