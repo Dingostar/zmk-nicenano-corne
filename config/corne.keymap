@@ -19,12 +19,8 @@
 #define dk_pipe RA(EQUAL)
 
 / {
-    behaviors {
-        mt: mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-        };
+    &mt {
+        flavor = "balanced";
     };
 
     combos {
