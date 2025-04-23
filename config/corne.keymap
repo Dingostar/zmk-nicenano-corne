@@ -19,6 +19,14 @@
 #define dk_pipe RA(EQUAL)
 
 / {
+    behaviors {
+        mt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -197,7 +205,7 @@
 &kp dk_question    &kp J   &kp G   &kp M                        &kp P          &kp V              &kp HASH            &kp PERIOD      &kp dk_fslash       &kp Q     &kp dk_quot  &kp dk_equal
 &mt LSHIFT ESCAPE  &lt 4 C &kp S   &kp N                        &lt 3 T        &kp K              &kp COMMA           &lt 2 A         &kp E               &kp I     &kp H        &kp dk_underscore
 &mt LCTRL dk_apos  &kp X   &kp F   &kp L                        &kp D          &kp W              &kp dk_dash         &kp U           &kp O               &kp Y     &kp B        &kp Z
-                                   &mt LEFT_ALT RA(NON_US_BACKSLASH) &lt LCTRL R    &mt LGUI RET       &mt LEFT_SHIFT TAB  &lt 1 SPACE     &kp BACKSPACE
+                                   &mt LEFT_ALT RA(NON_US_BACKSLASH) &mt LCTRL R    &mt LGUI RET       &mt LEFT_SHIFT TAB  &lt 1 SPACE     &kp BACKSPACE
             >;
         };
     };
