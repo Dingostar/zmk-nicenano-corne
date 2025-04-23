@@ -18,10 +18,10 @@
 #define dk_bslash RA(NON_US_BACKSLASH)
 #define dk_pipe RA(EQUAL)
 
+&mt {
+    flavor = "balanced";
+};
 / {
-    &mt {
-        flavor = "balanced";
-    };
 
     combos {
         compatible = "zmk,combos";
