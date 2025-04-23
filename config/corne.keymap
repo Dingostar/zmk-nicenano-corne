@@ -32,18 +32,18 @@
 
         to-gaming {
             timeout-ms = <30>;
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <36 37 38 39 40 41>;
         };
 
-        to-experimental {
+        to-default {
             timeout-ms = <30>;
             bindings = <&to 0>;
             key-positions = <39 40 41>;
         };
-        to-default {
+        to-experimental {
             timeout-ms = <30>;
-            bindings = <&to 6>;
+            bindings = <&to 1>;
             key-positions = <36 37 38>;
         };
 
@@ -137,9 +137,18 @@
 
             bindings = <
 &kp dk_question      &kp PERIOD   &kp COMMA      &kp L     &kp P                     &kp Y           &kp F          &kp G        &kp C         &kp R  &kp Q  &kp RIGHT_PARENTHESIS
-&mt LSHIFT ESCAPE    &lt 4 A      &kp O          &kp E     &lt 3 I                   &kp U           &kp D          &lt 2 H      &kp T         &kp N  &kp S  &kp QUESTION
+&mt LSHIFT ESCAPE    &lt 5 A      &kp O          &kp E     &lt 4 I                   &kp U           &kp D          &lt 3 H      &kp T         &kp N  &kp S  &kp QUESTION
 &mt LCTRL AMPERSAND  &kp AT_SIGN  &kp BACKSLASH  &kp J     &kp K                     &kp X           &kp B          &kp M        &kp W         &kp V  &kp Z  &kp SLASH
-                                                 &kp LGUI  &mt LEFT_SHIFT BACKSPACE  &mt LGUI TAB    &mt LCTRL RET  &lt 1 SPACE  &kp LEFT_ALT
+                                                 &kp LGUI  &mt LEFT_SHIFT BACKSPACE  &mt LGUI TAB    &mt LCTRL RET  &lt 2 SPACE  &kp LEFT_ALT
+            >;
+        };
+
+        experimental {
+            bindings = <
+&kp dk_question    &kp J   &kp G   &kp M                             &kp P          &kp V              &kp HASH            &kp PERIOD      &kp dk_fslash       &kp Q     &kp dk_quot  &kp dk_equal
+&mt LSHIFT ESCAPE  &lt 5 C &kp S   &kp N                             &lt 4 T        &kp K              &kp COMMA           &lt 3 A         &kp E               &kp I     &kp H        &kp dk_underscore
+&mt LCTRL dk_apos  &kp X   &kp F   &kp L                             &kp D          &kp W              &kp dk_dash         &kp U           &kp O               &kp Y     &kp B        &kp Z
+                                   &mt LEFT_ALT RA(NON_US_BACKSLASH) &mt LCTRL R    &mt LGUI RET       &mt LEFT_SHIFT TAB  &lt 2 SPACE     &kp BACKSPACE
             >;
         };
 
@@ -197,15 +206,6 @@
 &kp TAB    &kp N2  &kp A  &kp S         &kp D       &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &kp N3  &kp Z  &kp X         &kp C       &kp V        &trans  &trans  &trans  &trans  &trans  &trans
                           &kp LEFT_ALT  &kp LSHIFT  &kp SPACE    &to 0   &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&kp dk_question    &kp J   &kp G   &kp M                             &kp P          &kp V              &kp HASH            &kp PERIOD      &kp dk_fslash       &kp Q     &kp dk_quot  &kp dk_equal
-&mt LSHIFT ESCAPE  &lt 4 C &kp S   &kp N                             &lt 3 T        &kp K              &kp COMMA           &lt 2 A         &kp E               &kp I     &kp H        &kp dk_underscore
-&mt LCTRL dk_apos  &kp X   &kp F   &kp L                             &kp D          &kp W              &kp dk_dash         &kp U           &kp O               &kp Y     &kp B        &kp Z
-                                   &mt LEFT_ALT RA(NON_US_BACKSLASH) &mt LCTRL R    &mt LGUI RET       &mt LEFT_SHIFT TAB  &lt 1 SPACE     &kp BACKSPACE
             >;
         };
     };
