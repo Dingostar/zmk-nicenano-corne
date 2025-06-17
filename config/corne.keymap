@@ -20,6 +20,7 @@
 #define dk_plus MINUS
 #define dk_star EXCLAMATION
 #define dk_and LS(NUMBER_6)
+#define dk_home RA(RIGHT_BRACKET)
 
 &mt {
     flavor = "balanced";
@@ -135,7 +136,7 @@
             bindings = <
 &kp dk_question    &kp J   &kp G   &kp M                             &kp P          &kp V              &kp dk_and          &kp PERIOD      &kp dk_fslash       &kp dk_quot   &kp Q        &kp dk_equal
 &mt LSHIFT ESCAPE  &lt 5 C &kp S   &kp N                             &lt 4 T        &kp K              &kp COMMA           &lt 3 A         &kp E               &kp I         &kp H        &kp dk_underscore
-&mt LCTRL Z        &kp X   &kp F   &kp L                             &kp D          &kp W              &kp dk_dash         &kp U           &kp O               &kp Y         &kp B        &kp 
+&mt LCTRL Z        &kp X   &kp F   &kp L                             &kp D          &kp W              &kp dk_dash         &kp U           &kp O               &kp Y         &kp B        &kp dk_home
                                    &mt LEFT_ALT RA(NON_US_BACKSLASH) &mt LCTRL R    &mt LGUI RET       &mt LEFT_SHIFT TAB  &lt 2 SPACE     &kp BACKSPACE
             >;
         };
