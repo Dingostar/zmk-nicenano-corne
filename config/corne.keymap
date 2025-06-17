@@ -17,6 +17,9 @@
 #define dk_fslash AMPERSAND
 #define dk_bslash RA(NON_US_BACKSLASH)
 #define dk_pipe RA(EQUAL)
+#define dk_plus MINUS
+#define dk_star EXCLAMATION
+#define dk_and LS(NUMBER_6)
 
 &mt {
     flavor = "balanced";
@@ -129,6 +132,15 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            bindings = <
+&kp dk_question    &kp J   &kp G   &kp M                             &kp P          &kp V              &kp dk_and          &kp PERIOD      &kp dk_fslash       &kp dk_quot   &kp Q        &kp dk_equal
+&mt LSHIFT ESCAPE  &lt 5 C &kp S   &kp N                             &lt 4 T        &kp K              &kp COMMA           &lt 3 A         &kp E               &kp I         &kp H        &kp dk_underscore
+&mt LCTRL Z        &kp X   &kp F   &kp L                             &kp D          &kp W              &kp dk_dash         &kp U           &kp O               &kp Y         &kp B        &kp 
+                                   &mt LEFT_ALT RA(NON_US_BACKSLASH) &mt LCTRL R    &mt LGUI RET       &mt LEFT_SHIFT TAB  &lt 2 SPACE     &kp BACKSPACE
+            >;
+        };
+
+        experimental {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -143,14 +155,7 @@
             >;
         };
 
-        experimental {
-            bindings = <
-&kp dk_question    &kp J   &kp G   &kp M                             &kp P          &kp V              &kp HASH            &kp PERIOD      &kp dk_fslash       &kp Q     &kp dk_quot  &kp dk_equal
-&mt LSHIFT ESCAPE  &lt 5 C &kp S   &kp N                             &lt 4 T        &kp K              &kp COMMA           &lt 3 A         &kp E               &kp I     &kp H        &kp dk_underscore
-&mt LCTRL dk_apos  &kp X   &kp F   &kp L                             &kp D          &kp W              &kp dk_dash         &kp U           &kp O               &kp Y     &kp B        &kp Z
-                                   &mt LEFT_ALT RA(NON_US_BACKSLASH) &mt LCTRL R    &mt LGUI RET       &mt LEFT_SHIFT TAB  &lt 2 SPACE     &kp BACKSPACE
-            >;
-        };
+
 
         symbols {
             // -----------------------------------------------------------------------------------------
@@ -159,8 +164,8 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            bindings = <
-&trans  &kp GT  &kp LT            &kp NON_US_BSLH  &kp LS(NON_US_BSLH)    &none               &kp MINUS         &kp RA(NUMBER_8)          &kp RA(N9)  &kp EXCLAMATION  &kp PIPE     &trans
+            bindings =
+&trans  &kp GT  &kp LT            &kp NON_US_BSLH  &kp LS(NON_US_BSLH)    &none               &kp MINUS         &kp RA(NUMBER_8)          &kp RA(N9)  &kp dk_star      &kp PIPE     &trans
 &trans  &trans  &kp RA(NUMBER_2)  &kp LS(N8)       &kp LS(N9)             &kp LS(NUMBER_6)    &kp SLASH         &kp RA(N7)                &kp RA(N0)  &kp HASH         &kp PERCENT  &trans
 &trans  &trans  &kp EQUAL         &trans           &kp RA(RIGHT_BRACKET)  &none               &kp RA(NUMBER_4)  &kp RA(NON_US_BACKSLASH)  &kp LS(N7)  &kp RA(EQUAL)    &trans       &trans
                                   &trans           &trans                 &trans              &trans            &trans                    &trans
@@ -184,10 +189,10 @@
 
         numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PIPE2      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp SLASH   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PERIOD  &kp N7        &kp N8        &kp N9        &kp LS(SLASH)  &trans
-                        &trans  &trans  &trans    &trans      &trans        &trans
+&trans  &kp PERIOD  &kp COMMA   &trans  &trans  &trans    &kp dk_plus   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp dk_star    &trans
+&trans  &trans      &trans      &trans  &trans  &trans    &trans        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0         &trans
+&trans  &trans      &trans      &trans  &trans  &trans    &trans        &kp N7        &kp N8        &kp N9        &kp dk_fslash  &trans
+                                &trans  &trans  &trans    &kp PERIOD    &trans        &trans
             >;
         };
 
