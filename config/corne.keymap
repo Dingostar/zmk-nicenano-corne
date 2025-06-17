@@ -133,7 +133,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&kp dk_apos>, <&kp dk_apos>, <&kp N3>;
+            bindings = <&kp dk_apos>, <&kp dk_quot>;
         };
     };
 
