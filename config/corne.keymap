@@ -22,15 +22,11 @@
 #define dk_and LS(NUMBER_6)
 #define dk_home RA(RIGHT_BRACKET)
 
-&mt {
-    flavor = "balanced";
-};
+&mt { flavor = "balanced"; };
 
-&lt {
-    flavor = "balanced";
-};
+&lt { flavor = "balanced"; };
+
 / {
-
     combos {
         compatible = "zmk,combos";
 
@@ -45,6 +41,7 @@
             bindings = <&to 0>;
             key-positions = <39 40 41>;
         };
+
         to-experimental {
             timeout-ms = <30>;
             bindings = <&to 1>;
@@ -128,11 +125,19 @@
             label = "AE_MACRO";
         };
     };
+
     behaviors {
         td_apos_quot: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
+            bindings = <&kp BACKSLASH>, <&kp AT_SIGN>;
+        };
+
+        apos_quote: apos_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "APOS_QUOTE";
+            #binding-cells = <0>;
             bindings = <&kp BACKSLASH>, <&kp AT_SIGN>;
         };
     };
@@ -142,10 +147,10 @@
 
         default_layer {
             bindings = <
-&kp dk_question    &kp J   &kp G   &kp M                             &kp P          &kp V              &kp dk_and          &kp PERIOD      &kp dk_fslash       &td_apos_quot     &kp Q        &kp dk_equal
-&mt LSHIFT ESCAPE  &lt 5 C &kp S   &kp N                             &lt 4 T        &kp K              &kp COMMA           &lt 3 A         &kp E               &kp I             &kp H        &kp dk_underscore
-&mt LCTRL Z        &kp X   &kp F   &kp L                             &kp D          &kp W              &kp dk_dash         &kp U           &kp O               &kp Y             &kp B        &kp dk_home
-                                   &mt LEFT_ALT RA(NON_US_BACKSLASH) &mt LCTRL R    &mt LGUI RET       &mt LEFT_SHIFT TAB  &lt 2 SPACE     &kp BACKSPACE
+&kp dk_question    &kp J    &kp G  &kp M                              &kp P        &kp V           &kp dk_and          &kp PERIOD   &kp dk_fslash  &apos_quote  &kp Q  &kp dk_equal
+&mt LSHIFT ESCAPE  &lt 5 C  &kp S  &kp N                              &lt 4 T      &kp K           &kp COMMA           &lt 3 A      &kp E          &kp I        &kp H  &kp dk_underscore
+&mt LCTRL Z        &kp X    &kp F  &kp L                              &kp D        &kp W           &kp dk_dash         &kp U        &kp O          &kp Y        &kp B  &kp dk_home
+                                   &mt LEFT_ALT RA(NON_US_BACKSLASH)  &mt LCTRL R  &mt LGUI RET    &mt LEFT_SHIFT TAB  &lt 2 SPACE  &kp BACKSPACE
             >;
         };
 
@@ -164,7 +169,6 @@
             >;
         };
 
-
         symbols {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -173,9 +177,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GT  &kp LT            &kp NON_US_BSLH  &kp LS(NON_US_BSLH)    &none               &kp MINUS         &kp RA(NUMBER_8)          &kp RA(N9)  &kp dk_star      &kp PIPE     &trans
-&trans  &trans  &kp RA(NUMBER_2)  &kp LS(N8)       &kp LS(N9)             &kp LS(NUMBER_6)    &kp SLASH         &kp RA(N7)                &kp RA(N0)  &kp HASH         &kp PERCENT  &trans
-&trans  &trans  &kp EQUAL         &trans           &kp RA(RIGHT_BRACKET)  &none               &kp RA(NUMBER_4)  &kp RA(NON_US_BACKSLASH)  &kp LS(N7)  &kp RA(EQUAL)    &trans       &trans
+&trans  &kp GT  &kp LT            &kp NON_US_BSLH  &kp LS(NON_US_BSLH)    &none               &kp MINUS         &kp RA(NUMBER_8)          &kp RA(N9)  &kp dk_star    &kp PIPE     &trans
+&trans  &trans  &kp RA(NUMBER_2)  &kp LS(N8)       &kp LS(N9)             &kp LS(NUMBER_6)    &kp SLASH         &kp RA(N7)                &kp RA(N0)  &kp HASH       &kp PERCENT  &trans
+&trans  &trans  &kp EQUAL         &trans           &kp RA(RIGHT_BRACKET)  &none               &kp RA(NUMBER_4)  &kp RA(NON_US_BACKSLASH)  &kp LS(N7)  &kp RA(EQUAL)  &trans       &trans
                                   &trans           &trans                 &trans              &trans            &trans                    &trans
             >;
         };
@@ -197,10 +201,10 @@
 
         numpad {
             bindings = <
-&trans  &kp PERIOD  &kp COMMA   &trans  &trans  &trans    &kp dk_plus   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp dk_star    &trans
-&trans  &trans      &trans      &trans  &trans  &trans    &trans        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0         &trans
-&trans  &trans      &trans      &trans  &trans  &trans    &trans        &kp N7        &kp N8        &kp N9        &kp dk_fslash  &trans
-                                &trans  &trans  &trans    &kp PERIOD    &trans        &trans
+&trans  &kp PERIOD  &kp COMMA  &trans  &trans  &trans    &kp dk_plus  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp dk_star    &trans
+&trans  &trans      &trans     &trans  &trans  &trans    &trans       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0         &trans
+&trans  &trans      &trans     &trans  &trans  &trans    &trans       &kp N7        &kp N8        &kp N9        &kp dk_fslash  &trans
+                               &trans  &trans  &trans    &kp PERIOD   &trans        &trans
             >;
         };
 
