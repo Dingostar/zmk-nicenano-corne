@@ -21,6 +21,8 @@
 #define dk_star EXCLAMATION
 #define dk_and LS(NUMBER_6)
 #define dk_home RA(RIGHT_BRACKET)
+#define dk_hat RIGHT_BRACE
+
 
 &mt { flavor = "balanced"; };
 
@@ -177,7 +179,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp GT  &kp LT            &kp NON_US_BSLH  &kp LS(NON_US_BSLH)    &none               &kp MINUS         &kp RA(NUMBER_8)          &kp RA(N9)  &kp dk_star    &kp PIPE     &trans
+&trans  &kp GT  &kp LT            &kp NON_US_BSLH  &kp LS(NON_US_BSLH)    &kp dk_hat          &kp MINUS         &kp RA(NUMBER_8)          &kp RA(N9)  &kp dk_star    &kp PIPE     &trans
 &trans  &trans  &kp RA(NUMBER_2)  &kp LS(N8)       &kp LS(N9)             &kp LS(NUMBER_6)    &kp SLASH         &kp RA(N7)                &kp RA(N0)  &kp HASH       &kp PERCENT  &trans
 &trans  &trans  &kp EQUAL         &trans           &kp RA(RIGHT_BRACKET)  &none               &kp RA(NUMBER_4)  &kp RA(NON_US_BACKSLASH)  &kp LS(N7)  &kp RA(EQUAL)  &trans       &trans
                                   &trans           &trans                 &trans              &trans            &trans                    &trans
